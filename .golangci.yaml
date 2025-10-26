@@ -1,0 +1,30 @@
+# https://golangci-lint.run/usage/configuration/
+
+version: "2"
+linters:
+  default: none
+  # NOTE(joel): Please keep list sorted alphabetically
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - builtin$
+      - examples$
+      - third_party$
+formatters:
+  exclusions:
+    generated: lax
+    paths:
+      - builtin$
+      - examples$
+      - third_party$

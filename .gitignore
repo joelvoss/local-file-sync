@@ -1,0 +1,60 @@
+# Go build artifacts
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Coverage & profiling outputs
+cover.out
+coverage*.out
+*.pprof
+*.prof
+profile*.txt
+
+# Lint / analysis caches & reports
+.golangci-cache/
+.golangci-lint-report*
+
+# Generated state / lock artifacts (tool runtime)
+.local-file-sync_state.json
+
+# Logs & temp files
+*.log
+*.tmp
+/tmp/
+.temp/
+.cache/
+
+# IDE / Editor specific
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+# JetBrains (GoLand, IntelliJ, etc.)
+.idea/
+# Visual Studio
+.vs/
+# Sublime / Others
+*.sublime-workspace
+*.sublime-project
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+
+# Environment & secrets (add consciously if needed)
+.env
+.env.*
+!.env.example
